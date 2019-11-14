@@ -1,14 +1,14 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Helmet from "react-helmet"
 
 import Header from "./header"
 import "../assets/css/layout.css"
 
 const Layout = ({ children }) => {
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState([]);
   
   const childrenWithProps = React.Children.map(children, (child, i) =>
-    React.cloneElement(child, { cart: setCart })
+    React.cloneElement(child, { cart, setCart })
   );
 
   return (

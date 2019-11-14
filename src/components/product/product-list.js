@@ -26,7 +26,7 @@ const ProductList = props => {
   return(
     <div className="product-list grid-x grid-margin-y">
       { allDataJson.edges[0].node.products.map(product => (
-        <ProductItem product={ product } cart={ props.cart } key={ product.sku } />
+        <ProductItem product={ product } cart={ props.cart } setCart={ props.setCart } key={ product.sku } btn="add" />
       )) }
     </div>
   )
