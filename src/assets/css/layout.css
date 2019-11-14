@@ -615,6 +615,9 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+.cost {
+  float: right;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

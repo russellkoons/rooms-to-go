@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Helmet from "react-helmet"
 
 import Header from "./header"
 import "../assets/css/layout.css"
 
+// I made Layout stateful and passed down the hook as props down to the ProductItem component
+
 const Layout = ({ children }) => {
   const [cart, setCart] = useState([]);
-  useEffect(() => {
-    console.log('State changed!');
-  })
   
+  // Gives hook props to all the children of Layout
   const childrenWithProps = React.Children.map(children, (child, i) =>
     React.cloneElement(child, { cart, setCart })
   );
