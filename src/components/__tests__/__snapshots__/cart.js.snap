@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart renders correctly 1`] = `
+Array [
+  <h1>
+    Cart
+  </h1>,
+  <p>
+    There's nothing here...
+  </p>,
+]
+`;
