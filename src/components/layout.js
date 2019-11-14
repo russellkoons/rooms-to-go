@@ -6,6 +6,9 @@ import "../assets/css/layout.css"
 
 const Layout = ({ children }) => {
   const [cart, setCart] = useState([]);
+  useEffect(() => {
+    console.log('State changed!');
+  })
   
   const childrenWithProps = React.Children.map(children, (child, i) =>
     React.cloneElement(child, { cart, setCart })

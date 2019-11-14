@@ -11,8 +11,7 @@ const ProductItem = props => {
   const removeItem = index => {
     let cart = props.cart;
     cart.splice(index, 1);
-    console.log(cart);
-    props.setCart(cart);
+    props.setCart([...cart]);
   }
 
   if (props.btn === 'add') {
