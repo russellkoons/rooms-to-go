@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Jon Molinaro <jmolinaro@roomstogo.com>",
   "dependencies": {
-    "gatsby": "^2.18.10",
+    "gatsby": "^2.24.47",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-source-filesystem": "^2.1.42",
     "gatsby-transformer-json": "^2.2.22",
