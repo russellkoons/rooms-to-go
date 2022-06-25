@@ -9,7 +9,7 @@
     "gatsby-plugin-react-helmet": "^3.3.11",
     "gatsby-source-filesystem": "^2.3.30",
     "gatsby-transformer-json": "^2.4.12",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
